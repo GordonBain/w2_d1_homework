@@ -22,14 +22,22 @@ class TestStudent < MiniTest::Test
 #setter methods below
 
   def test_update_students_name
-
+    @daniel.name = ("John Smith")
+    assert_equal("John Smith", @daniel.name)
   end
 
   def test_update_students_cohort
-
-
+    @daniel.cohort = 2
+    assert_equal(2, @daniel.cohort)
   end
 
+  def test_student_talks
+    assert_equal("I can talk", @daniel.talk())
+  end   
 
-end
+  def test_fav_lang
+    assert_equal("I love ruby", @daniel.fav_lang("ruby"))
+  end
+  
+end 
 
