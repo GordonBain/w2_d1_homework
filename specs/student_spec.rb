@@ -12,11 +12,11 @@ class TestStudent < MiniTest::Test
 #getter methods below
 
   def test_student_get_name
-  assert_equal("Daniel", @daniel.name)
+    assert_equal("Daniel", @daniel.name)
   end
 
   def test_student_get_cohort
-  assert_equal(1, @daniel.cohort)
+    assert_equal(1, @daniel.cohort)
   end
 
 #setter methods below
