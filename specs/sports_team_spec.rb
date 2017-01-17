@@ -8,7 +8,7 @@ def setup
   @scotland = SportsTeam.new("Scotland", ["Smith", "Brown", "White", "Jones", "Irvine"], "Mr Coach")
 end
 
-#getter methods below
+# getter methods below
 
 def test_get_team_name
   assert_equal("Scotland", @scotland.team)
